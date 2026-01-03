@@ -1,9 +1,9 @@
-//Problem: Array Filtering and Mapping
+//Problem1: Array Filtering and Mapping
 
 const people = [
   { name: "Shamim", age: 22, gender: "male" },
   { name: "Ayesha", age: 21, gender: "female" },
-  { name: "Rahim", age: 25, gender: "male" },
+  { name: "Adbur Rahim", age: 25, gender: "male" },
   { name: "Nusrat", age: 23, gender: "female" },
 ];
 
@@ -16,7 +16,7 @@ function getMaleNames(persons) {
 const result = getMaleNames(people);
 console.log(result);
 
-//Problem: Object Manipulation
+//Problem2: Object Manipulation
 const books = [
   { title: "Clean Code", author: "Robert C. Martin", year: 2008 },
   { title: "You Don’t Know JS", author: "Kyle Simpson", year: 2015 },
@@ -30,7 +30,7 @@ function getBookTitles(bookArray) {
 const result2 = getBookTitles(books);
 console.log(result2);
 
-//Problem: Function Composition
+//Problem3: Function Composition
 function square(num) {
   return num * num;
 }
@@ -52,7 +52,7 @@ function composedFunction(num) {
 const result3 = composedFunction(3);
 console.log(result3);
 
-//Problem: Sorting Objects (Cars)
+//Problem4: Sorting Objects (Cars)
 
 const cars = [
   { make: "Toyota", model: "Corolla", year: 2018 },
@@ -68,7 +68,7 @@ function sortCarsByYear(carArray) {
 const sortedCars = sortCarsByYear(cars);
 console.log(sortedCars);
 
-//Problem: Find And Modify
+//Problem5: Find And Modify
 const people2 = [
   { name: "Shamim", age: 22 },
   { name: "Abdur Rahim", age: 25 },
@@ -89,7 +89,7 @@ function updateAgeByName(personArray, personName, newAge) {
 const updatedPeople = updateAgeByName(people2, "Shamim", 25);
 console.log(updatedPeople);
 
-//Problem: Array Reduction
+//Problem6: Array Reduction
 const numbers = [10, 15, 20, 25, 30, 33, 40];
 
 const sumEven = (arr) =>
@@ -97,7 +97,7 @@ const sumEven = (arr) =>
 
 console.log(sumEven(numbers));
 
-//Problem: Leap Year Checker
+//Problem7: Leap Year Checker
 const isLeapYear = (year) =>
   (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
 
